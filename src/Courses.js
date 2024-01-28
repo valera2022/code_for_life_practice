@@ -15,27 +15,6 @@ export default function Courses({}) {
         .then(res=> res.json())
         .then(data=> setCourses(data) )
     },[])
-    if(user){
-        return(
-        <div class="container">
-            <h1 id="welcome">Welcome {userInput}</h1>
-            {courses.map(course=><Course usuario={user} course={course}/>)}
-        </div>
-        )
-        
-    }
-    else if(userInput === ""){
-       return <h1>need to insert a name</h1>
-    }
-    else if( userInput !== user ){
-       return ( <h1>Sorry you are not a Student here</h1>)
-    }
-    else{
-        return null
-    }
   
-//   return (
-    
-//     <div>Courses</div>
-//   )
+
 }
