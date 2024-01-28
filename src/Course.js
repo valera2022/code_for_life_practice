@@ -8,8 +8,9 @@ import usePersonal from './My_hook'
 
 
 export default function Course({course,usuario}) {
-    const {isTeacher} = usePersonal()
-  console.log(usuario)
+  // add logic to display editCourse component base on user roll
+ //abstract logic by creating a custom hook
+
   return (
     
     <div class="div-1">
@@ -17,8 +18,8 @@ export default function Course({course,usuario}) {
         <img src={course.image}  width="200" height="200"/>
         <p>{course.description}</p>
         <div>
-         {isTeacher()? <EditCourse cl={course}/> : null}
-         {/* //changed usuario.roll === "Teacher"  */}
+         {<EditCourse cl={course}/> : null}
+       
         </div>
     </div>
   )
