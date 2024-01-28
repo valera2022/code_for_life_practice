@@ -1,5 +1,45 @@
 .App {
   text-align: center;
+  /* background-color: rgb(117, 164, 164); */
+  height: 100%;
+}
+/* .course{
+  border-style: rounded;
+  border-width: 220px ;
+  border-color: rgb(255, 0, 0);
+} */
+
+.container{
+  display: flex;
+  flex-direction: row;
+ 
+ 
+  /* margin-right  : 200px; */
+
+}
+.div-1 {
+  background-color: rgb(112, 112, 150); 
+  height: 320px;
+  width: 250px;
+  padding-bottom: 30px;
+  
+  margin-right  : 10px;
+  margin-top: 100px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px grey;
+  /* filter: blur(0.5px); */
+
+
+ 
+  align-items: center;
+  
+}
+
+#welcome{
+  font-size: medium;
+  text-align: center;
+  margin-left: 200px;
+  /* padding-bottom: 20px; */
 }
 
 .App-logo {
@@ -36,3 +76,12 @@
     transform: rotate(360deg);
   }
 }
+
+#title {
+  color: blue;
+  text-align: center;
+
+
+}
+
+

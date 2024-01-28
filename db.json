@@ -1,0 +1,47 @@
+{
+    "users": [
+      {
+        "id": 1,
+        "name": "John",
+        "roll": "Teacher"
+      },
+      {
+        "id": 2,
+        "name": "Michael",
+        "roll": "Student"
+      },
+      {
+        "id": 3,
+        "name": "Jansen",
+        "roll": "Student"
+      },
+      {
+        "id": 4,
+        "name": "Amelia",
+        "roll": "Teacher"
+      }
+    ],
+    "courses": [
+        {
+          "id": 1,
+          "title": "How to Bake a Cake",
+          "description": "You will not burn your next Apple pie after this Class",
+          "image":"https://static.independent.co.uk/s3fs-public/thumbnails/image/2018/10/18/09/baking-2.jpg",
+          "user_id":4
+        },
+        {
+          "id": 2,
+          "title": "Baseball Strategies",
+          "description": "Baseball is fun but there is a lot of moving parts. You will learn how to play yours.",
+          "image":"https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2Fa%2Faf%2FNavy_baseball.jpg%2F1280px-Navy_baseball.jpg&f=1&nofb=1&ipt=130383902fccd8b094890e0cb669b3095f2fd72d7748f349d3127534650bc51c&ipo=images",
+          "user_id":1
+        },
+        {
+            "id": 3,
+            "title": "The History of Swimming",
+            "description": "World history is broad subject. We will see it through a narrower perspective, swimming.",
+            "image":"https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2F3.bp.blogspot.com%2F-yaA2ERqO0BA%2FVwhjhWm1yoI%2FAAAAAAAAUeU%2FibVAxCgjW2UHlSpTkgMSjbckbeRzq3uYA%2Fs1600%2FMen%252Bin%252BSwimwears%252Bin%252Bthe%252B1900s%252B%2525283%252529.jpg&f=1&nofb=1&ipt=ca5702f4abdbe2a0a90757a8c5b49abac35299a2883b8c80cace0df238fb52dd&ipo=images",
+            "user_id":1
+          }
+      ]
+  }
