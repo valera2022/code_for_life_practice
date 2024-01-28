@@ -4,9 +4,11 @@ import { useContext } from 'react'
 import { AppContext } from './context/context'
 
 export default function Courses({}) {
+    //find user
+    //add conditional statements to display based on input value
     const{users,userInput}= useContext(AppContext)
     const[courses,setCourses] = useState([])
-    let user = users.find(u=> u.name === userInput)
+
     console.log(userInput)
     console.log(user)
 
