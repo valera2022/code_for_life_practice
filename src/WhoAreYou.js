@@ -1,36 +1,21 @@
 import React from 'react'
 import { useState } from 'react'
 import Courses from './Courses'
+import { useContext } from 'react'
+import { AppContext } from './context/context'
 
 export default function WhoAreYou() {
-    const [userInput,setUserInput]= useState("")
-    const [users,setUsers] = useState([])
-    const [eventFired, setEventFired] = useState(false)
-    console.log(userInput)
+    const{getUsers,setUserInput,userInput,eventFired } =  useContext(AppContext)
+
+
 
     
 
     function handleSubmit(e){
         e.preventDefault()
-        e.stopPropagation()
-
-       fetch("http://localhost:4000/users")
-        .then(response => response.json())
-        .then(data => {setUsers(data)
-           
-            console.log("fired")
-           
-            setEventFired(true)
-        }
-
-        
-        )
-      
-      
-      
+        getUsers()
             
           
-       
     }
   return (
     <div>
@@ -43,7 +28,7 @@ export default function WhoAreYou() {
         </form>
         </div>
         <div>
-        {eventFired && <Courses setEvent={setEventFired} inp = {userInput} people = {users}/> }
+        {eventFired && <Courses /> }
         </div>
      
         
