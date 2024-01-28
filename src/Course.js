@@ -18,7 +18,7 @@ export default function Course({course,usuario}) {
         <img src={course.image}  width="200" height="200"/>
         <p>{course.description}</p>
         <div>
-         {<EditCourse cl={course}/> : null}
+         <EditCourse cl={course}/> 
        
         </div>
     </div>

@@ -5,12 +5,13 @@ import { AppContext } from './context/context'
 
 export default function Courses({}) {
     //find user
-    //add conditional statements to display based on input value
+    
+    //add conditional statements to display based on input value(display course + what's needed in different situations)
     const{users,userInput}= useContext(AppContext)
     const[courses,setCourses] = useState([])
 
     console.log(userInput)
-    console.log(user)
+   
 
     useEffect(()=>{
         fetch("http://localhost:4000/courses")
