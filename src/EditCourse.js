@@ -3,20 +3,13 @@ import { useRef } from 'react'
 import { useState } from 'react';
 
 export default function EditCourse({cl: course}) {
+    //useRef to transformed this form into a modal
     const [title,setTitle] = useState(course.title)
     const [image,setImage] = useState(course.image)
     const [description,setDescription] = useState(course.description)
-    const editRef = useRef();
 
-    function openModal(){
-        editRef.current.showModal()
 
-    }
-
-    function closeModal(){
-        editRef.current.close()
-
-    }
+    
 
     function handleSubmit(){
 
@@ -24,8 +17,8 @@ export default function EditCourse({cl: course}) {
   return (
     <>
 
-    <dialog id="dialog" ref={editRef}>
-        <form onSubmit={handleSubmit} method="dialog">
+   
+        <form onSubmit={handleSubmit} >
             <div>
 
              <div>
@@ -56,18 +49,15 @@ export default function EditCourse({cl: course}) {
 
               </div>
               <div>
-                <button  type="submit" formmethod="dialog">Submit</button>
+                <button  type="submit"     >Submit</button>
               </div>
-              <div>
-                <button  onClick={closeModal}>cancel</button>
-              </div>
+             
             </div>
 
         </form>
 
 
-    </dialog>
-      <button onClick={openModal}>Edit </button>
+   
     </>
  
   )
