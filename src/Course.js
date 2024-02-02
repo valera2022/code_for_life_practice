@@ -10,7 +10,7 @@ import usePersonal from './My_hook'
 export default function Course({course,usuario}) {
   // add logic to display editCourse component base on user roll
  //abstract logic by creating a custom hook
-
+console.log(course)
   return (
     
     <div class="div-1">

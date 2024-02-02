@@ -10,7 +10,11 @@ export default function Courses({}) {
     const{users,userInput}= useContext(AppContext)
     const[courses,setCourses] = useState([])
 
+    let user = users.find(u=>u.name === userInput)
+    console.log(user)
+
     console.log(userInput)
+    console.log(courses)
    
 
     useEffect(()=>{
@@ -18,6 +22,15 @@ export default function Courses({}) {
         .then(res=> res.json())
         .then(data=> setCourses(data) )
     },[])
+
+    if(user){
+       return (
+        <div className=''>
+         <h1>Welcome {user.name}</h1>
+        {courses.map(c=><Course course={c}/>)}
+        </div>
+       )
+    }
   
 
 }
