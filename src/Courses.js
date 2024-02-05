@@ -25,11 +25,15 @@ export default function Courses({}) {
 
     if(user){
        return (
-        <div className=''>
+        <div className='container'>
          <h1>Welcome {user.name}</h1>
         {courses.map(c=><Course course={c}/>)}
         </div>
        )
+    }
+    else if(user === undefined){
+       return <h1>User was found</h1>
+
     }
   
 
